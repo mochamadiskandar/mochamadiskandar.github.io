@@ -24,7 +24,7 @@ body {
   /* box-shadow : horizontal, vertical, tingkat kerubaman, spread, color */
   box-shadow: 0 4px 8px 0px gray;
   border-radius: 5px;
-  padding: 10px 20px 5px 20px;
+  padding: 10px 20px 10px 20px;
   margin-top: 20px;
 }
 
@@ -32,7 +32,7 @@ body {
   /* box-shadow : horizontal, vertical, tingkat kerubaman, spread, color */
   box-shadow: 0 4px 8px 0px gray;
   border-radius: 5px;
-  padding: 10px 20px 60px 20px;
+  padding: 10px 20px 20px 20px;
   margin-top: 20px;
 }
 
@@ -164,6 +164,30 @@ h2 {
   color: #0984e3;
   font-weight: 500;
 }
+
+.download {
+  text-align: left;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.button-download {
+  font-family: "Quicksand", Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  color: #0984e3;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.4s;
+  border: 1px solid #0984e3;
+  background-color: white;
+  box-shadow: 0 1px 8px 0px gray;
+}
+
+.button-download:hover {
+  background-color: #0984e3;
+  color: white;
+}
+
 /* styling skill */
 .table-container {
   margin-top: 15px;
@@ -273,26 +297,6 @@ h2 {
   text-align: justify;
 }
 
-.card-download {
-  /* box-shadow : horizontal, vertical, tingkat kerubaman, spread, color */
-  box-shadow: 0 4px 8px 0px gray;
-  border-radius: 5px;
-  padding: 10px 20px;
-  margin-top: 20px;
-}
-
-#download .table-download {
-  margin: auto;
-}
-
-.table-download td {
-  font-size: 15px;
-  padding-right: 10px;
-}
-
-.table-download img {
-  width: 18px;
-}
 /* footer */
 footer {
   padding: 5px;
@@ -302,8 +306,8 @@ footer {
   font-weight: bold;
 }
 
-/* extra small devices (phone 600px and down) */
-@media screen and (max-width: 570px) {
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media screen and (min-width: 414px) and (max-device-width: 736px) {
   #aside-skills {
     width: 100%;
   }
@@ -313,22 +317,28 @@ footer {
     padding: 0;
   }
 
-  header nav {
-    text-align: left;
+  header nav ul {
+    padding-inline-start: 0px;
   }
 
   header nav a {
     padding-right: 5px;
     padding-left: 5px;
-    font-size: 15px;
+    font-size: 11px;
   }
 
   .jumbotron {
-    padding: 25px 30px;
+    padding: 20px 30px;
+  }
+
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 30px;
   }
 
   .container-photo img {
-    width: 250px;
+    width: 150px;
     border-radius: 25px;
   }
 
@@ -336,12 +346,30 @@ footer {
     margin-top: 15px;
   }
   .social img {
-    width: 40px;
+    width: 25px;
   }
 
   .table-biodata {
-    font-size: 20px;
-    margin-top: 25px;
+    font-size: 12px;
+    margin-top: 15px;
+    line-height: 12px;
+  }
+
+  .skill li {
+    font-size: 12px;
+  }
+
+  .skill li span {
+    font-size: 10px;
+  }
+
+  .table th {
+    font-size: 12px;
+  }
+
+  .table td {
+    font-size: 10px;
+    text-align: left;
   }
 
   .project .content {
@@ -350,16 +378,139 @@ footer {
   }
 
   .project img {
-    width: 25%;
+    width: 20%;
   }
 
   .project h4 {
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 10px;
   }
 
   .project p {
     margin-top: 10px;
+  }
+
+  .table-download td {
+    font-size: 12px;
+    padding-right: 5px;
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media screen and (min-width: 375px) and (max-device-width: 667px) {
+  #aside-skills {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+
+  header nav ul {
+    padding-inline-start: 0px;
+  }
+
+  header nav a {
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 9px;
+  }
+
+  .jumbotron {
+    padding: 20px 25px;
+  }
+
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+
+  .container-photo img {
+    width: 150px;
+    border-radius: 25px;
+  }
+
+  .social ul {
+    margin-top: 15px;
+  }
+  .social img {
+    width: 25px;
+  }
+
+  .table-biodata {
+    font-size: 12px;
+    margin-top: 15px;
+    line-height: 12px;
+  }
+
+  .download {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .button-download {
+    font-size: 8px;
+  }
+
+  .button-download:hover {
+    background-color: #0984e3;
+    color: white;
+  }
+
+  .skill li {
+    font-size: 12px;
+  }
+
+  .skill li span {
+    font-size: 10px;
+  }
+
+  .table {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .table th {
+    font-size: 11px;
+  }
+
+  .table td {
+    font-size: 9px;
+    text-align: left;
+  }
+
+  .project .content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .project img {
+    width: 20%;
+  }
+
+  .project h4 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .project p {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+
+  .table-download td {
+    font-size: 10px;
+    padding-right: 2px;
+  }
+
+  .table-download img {
+    width: 15px;
+  }
+
+  footer {
+    font-size: 10px;
   }
 }
 
