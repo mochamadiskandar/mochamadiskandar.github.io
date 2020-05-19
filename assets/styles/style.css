@@ -12,13 +12,6 @@ body {
   box-sizing: border-box;
 }
 
-.feature-img {
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-  object-position: center;
-}
-
 .card {
   /* box-shadow : horizontal, vertical, tingkat kerubaman, spread, color */
   box-shadow: 0 4px 8px 0px gray;
@@ -104,7 +97,7 @@ main {
   overflow: auto;
 }
 
-#content {
+#aside-skills {
   float: right;
   width: 65%;
 }
@@ -168,7 +161,8 @@ h2 {
 }
 
 .label {
-  color: #0fbcf9;
+  color: #0984e3;
+  font-weight: 500;
 }
 /* styling skill */
 .table-container {
@@ -234,6 +228,10 @@ h2 {
   color: rgb(7, 7, 7);
 }
 
+.table .course {
+  text-align: left;
+}
+
 .table tr:nth-child(odd) {
   background-color: rgb(209, 209, 209);
 }
@@ -262,7 +260,7 @@ h2 {
 
 .project img {
   width: 50%;
-  border-radius: 30px;
+  /* border-radius: 30px; */
 }
 
 .project h4 {
@@ -303,10 +301,13 @@ footer {
   text-align: center;
   font-weight: bold;
 }
-/* responsive */
 
-@media screen and (max-width: 1050px) {
-  #content,
+/* extra small devices (phone 600px and down) */
+@media screen and (max-width: 600px) {
+  #aside-skills {
+    width: 100%;
+  }
+
   aside {
     width: 100%;
     padding: 0;
@@ -315,28 +316,59 @@ footer {
   header nav {
     text-align: left;
   }
+
   header nav a {
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 15px;
+  }
+
+  .jumbotron {
+    padding: 25px 30px;
   }
 
   .container-photo img {
-    width: 350px;
+    width: 250px;
+    border-radius: 25px;
   }
 
+  .social ul {
+    margin-top: 15px;
+  }
   .social img {
-    width: 60px;
+    width: 40px;
   }
 
-  .profile .table-biodata {
+  .table-biodata {
     font-size: 20px;
-    line-height: 30px;
-    margin-left: 60px;
+    margin-top: 25px;
+  }
+
+  .project .content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .project img {
+    width: 25%;
+  }
+
+  .project h4 {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
+  .project p {
+    margin-top: 10px;
   }
 }
 
-@media screen and (max-width: 800px) {
-  #content,
+/* medium devices (landscape tablets, min width 768px and up) */
+@media screen and (min-width: 768px) {
+  #aside-skills {
+    width: 100%;
+  }
+
   aside {
     width: 100%;
     padding: 0;
@@ -352,27 +384,51 @@ footer {
 
   .container-photo img {
     width: 300px;
+    border-radius: 25px;
   }
 
+  .social ul {
+    margin-top: 15px;
+  }
   .social img {
-    width: 40px;
+    width: 50px;
+    border-radius: 10px;
   }
 
   .profile .table-biodata {
-    font-size: 20px;
-    line-height: 20px;
-    margin-left: 20px;
+    font-size: 25px;
+    line-height: 25px;
+    margin-top: 25px;
+  }
+
+  .project .content {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .project img {
+    width: 35%;
+  }
+
+  .project h4 {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
+  .project p {
+    margin-top: 10px;
   }
 }
 
-@media screen and (max-width: 450px) {
-  .jumbotron {
-    font-size: 12px;
-    padding: 15px 20px;
+/* larges devices (laptop, 992px and up) */
+@media screen and (min-width: 1024px) {
+  #aside-skills {
+    width: 100%;
   }
 
-  .jumbotron h1 {
-    font-size: 30px;
+  aside {
+    width: 100%;
+    padding: 0;
   }
 
   header nav {
@@ -380,138 +436,77 @@ footer {
   }
 
   header nav a {
-    font-size: 9px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
-  h2 {
-    font-size: 25px;
-    margin-bottom: 20px;
+  .jumbotron {
+    padding: 25px;
   }
 
   .container-photo img {
-    width: 170px;
+    width: 350px;
   }
 
   .social img {
-    width: 20px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    width: 60px;
+    border-radius: 10px;
   }
 
   .profile .table-biodata {
-    font-size: 11px;
-    line-height: 11px;
-    margin-left: 10px;
+    font-size: 25px;
+    line-height: 25px;
+    margin-left: 60px;
   }
 
-  .content-skill ul li,
-  .content-skill ul li span {
-    font-size: 11px;
-  }
-
-  .table th,
-  .table td {
-    font-size: 11px;
-  }
-
-  #project .table-project .project .content {
-    width: 100%;
-    float: left;
-    font-size: 11px;
-    padding: 10px;
-  }
-
-  #project h4 {
-    font-size: 15px;
-  }
-
-  #project img {
-    width: 25%;
-  }
-
-  .table-download td {
-    font-size: 11px;
-  }
-  .table-download img {
-    width: 15px;
-  }
-
-  footer {
-    font-size: 11px;
+  .project .content {
+    width: 33%;
+    padding: 20px;
   }
 }
 
-@media screen and (max-width: 340px) {
+/* larges devices (laptop, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  #aside-skills {
+    width: 65%;
+  }
+
+  aside {
+    width: 35%;
+    padding-right: 20px;
+  }
+
   header nav {
+    text-align: center;
   }
 
   header nav a {
-    font-size: 6px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
-  h2 {
-    font-size: 25px;
-    margin-bottom: 20px;
+  .jumbotron {
+    padding: 40px 100px;
   }
 
   .container-photo img {
-    width: 120px;
-    border-radius: 20px;
+    width: 200px;
   }
 
-  .social ul {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    list-style: none;
-    padding-left: 5px;
+  .social img {
+    width: 30px;
+    border-radius: 10px;
   }
 
   .profile .table-biodata {
-    font-size: 10px;
-    line-height: 10px;
-    margin-left: 0px;
-    margin-top: 0px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
   }
 
-  .table-biodata td {
-    padding-right: 5px;
-  }
-
-  .content-skill ul li,
-  .content-skill ul li span {
-    font-size: 9px;
-  }
-
-  .table th,
-  .table td {
-    font-size: 8px;
-  }
-
-  #project .table-project .project .content {
-    width: 100%;
-    float: left;
-    font-size: 10px;
-    padding: 10px;
-  }
-
-  #project h4 {
-    font-size: 15px;
-  }
-
-  #project img {
-    width: 20%;
-  }
-
-  .table-download td {
-    font-size: 10px;
-  }
-  .table-download img {
-    width: 10px;
-  }
-
-  footer {
-    font-size: 10px;
+  .project .content {
+    width: 33%;
+    padding: 20px;
   }
 }
