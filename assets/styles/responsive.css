@@ -1,0 +1,502 @@
+/* ----------- iPhone 4 and 4S ----------- */
+/* @media screen and (min-width: 320px) and (max-device-width: 480px) {
+} */
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+@media screen and (min-width: 320px) and (max-device-width: 568px) {
+  main {
+    padding: 10px 10px;
+  }
+
+  .card {
+    padding: 10px 10px;
+  }
+
+  #aside-skills {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+
+  nav {
+    opacity: 1;
+  }
+
+  header nav ul {
+    padding-inline-start: 0px;
+  }
+
+  header nav a {
+    padding-right: 4px;
+    padding-left: 4px;
+    font-size: 8px;
+  }
+
+  .jumbotron {
+    padding: 15px 20px;
+    font-size: 15px;
+  }
+
+  .jumbotron h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .container-photo img {
+    width: 150px;
+    border-radius: 25px;
+  }
+
+  .social ul {
+    margin-top: 15px;
+  }
+  .social img {
+    width: 20px;
+  }
+
+  .table-biodata {
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    line-height: 10px;
+  }
+
+  .download {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  .button-download {
+    font-size: 7px;
+    padding: 5px 5px;
+    box-shadow: 0 4px #0984e3; /* horz vert color */
+  }
+
+  .button-download:active {
+    top: 4px;
+  }
+
+  .skill li {
+    font-size: 12px;
+  }
+
+  .skill li span {
+    font-size: 10px;
+  }
+
+  .table {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .table th {
+    font-size: 10px;
+  }
+
+  .table td {
+    font-size: 8px;
+    text-align: left;
+  }
+
+  .project .content {
+    width: 100%;
+    padding: 5px 10px;
+  }
+
+  .project img {
+    width: 15%;
+  }
+
+  .project h4 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .project p {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+
+  .table-download td {
+    font-size: 10px;
+    padding-right: 2px;
+  }
+
+  .table-download img {
+    width: 15px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media screen and (min-width: 375px) and (max-device-width: 667px) {
+  #aside-skills {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+
+  header nav ul {
+    padding-inline-start: 0px;
+  }
+
+  header nav a {
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 9px;
+  }
+
+  .jumbotron {
+    padding: 20px 25px;
+  }
+
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+
+  .container-photo img {
+    width: 150px;
+    border-radius: 25px;
+  }
+
+  .social ul {
+    margin-top: 15px;
+  }
+  .social img {
+    width: 25px;
+  }
+
+  .table-biodata {
+    font-size: 12px;
+    margin-top: 15px;
+    line-height: 12px;
+  }
+
+  .download {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .button-download {
+    font-size: 8px;
+    box-shadow: 0 5px #0984e3; /* horz vert color */
+  }
+
+  .button-download:active {
+    top: 5px;
+  }
+
+  .skill li {
+    font-size: 12px;
+  }
+
+  .skill li span {
+    font-size: 10px;
+  }
+
+  .table {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .table th {
+    font-size: 11px;
+  }
+
+  .table td {
+    font-size: 9px;
+    text-align: left;
+  }
+
+  .project .content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .project img {
+    width: 20%;
+  }
+
+  .project h4 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .project p {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+
+  .table-download td {
+    font-size: 10px;
+    padding-right: 2px;
+  }
+
+  .table-download img {
+    width: 15px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+}
+
+/* ----------- iPhone 6+, 6S+, 7+ and 8+ ----------- */
+@media screen and (min-width: 414px) and (max-device-width: 736px) {
+  #aside-skills {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+
+  nav {
+    opacity: 1;
+  }
+
+  header nav ul {
+    padding-inline-start: 0px;
+  }
+
+  header nav a {
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 11px;
+  }
+
+  .jumbotron {
+    padding: 20px 30px;
+  }
+
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+
+  .container-photo img {
+    width: 150px;
+    border-radius: 25px;
+  }
+
+  .social ul {
+    margin-top: 15px;
+  }
+  .social img {
+    width: 25px;
+  }
+
+  .table-biodata {
+    font-size: 12px;
+    margin-top: 15px;
+    line-height: 12px;
+  }
+
+  .skill li {
+    font-size: 12px;
+  }
+
+  .skill li span {
+    font-size: 10px;
+  }
+
+  .table th {
+    font-size: 12px;
+  }
+
+  .table td {
+    font-size: 10px;
+    text-align: left;
+  }
+
+  .project .content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .project img {
+    width: 20%;
+  }
+
+  .project h4 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .project p {
+    margin-top: 10px;
+  }
+
+  .table-download td {
+    font-size: 12px;
+    padding-right: 5px;
+  }
+}
+
+/* batas */
+/* medium devices (landscape tablets, min width 768px and up) */
+@media screen and (min-width: 768px) {
+  #aside-skills {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+  header nav {
+    text-align: left;
+  }
+
+  header nav a {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .container-photo img {
+    width: 300px;
+    border-radius: 25px;
+  }
+
+  .social ul {
+    margin-top: 15px;
+  }
+  .social img {
+    width: 50px;
+    border-radius: 10px;
+  }
+
+  .profile .table-biodata {
+    font-size: 25px;
+    line-height: 25px;
+    margin-top: 25px;
+  }
+
+  .project .content {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .project img {
+    width: 35%;
+  }
+
+  .project h4 {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
+  .project p {
+    margin-top: 10px;
+  }
+}
+
+/* larges devices (laptop, 992px and up) */
+@media screen and (min-width: 1024px) {
+  #aside-skills {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+
+  header nav {
+    text-align: left;
+  }
+
+  header nav a {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .jumbotron {
+    padding: 25px;
+  }
+
+  .container-photo img {
+    width: 350px;
+  }
+
+  .social img {
+    width: 60px;
+    border-radius: 10px;
+  }
+
+  .profile .table-biodata {
+    font-size: 25px;
+    line-height: 25px;
+    margin-left: 60px;
+  }
+
+  .project .content {
+    width: 33%;
+    padding: 20px;
+  }
+}
+
+/* larges devices (laptop, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  #aside-skills {
+    width: 65%;
+  }
+
+  aside {
+    width: 35%;
+    padding-right: 20px;
+  }
+
+  header nav {
+    text-align: center;
+  }
+
+  header nav a {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .jumbotron {
+    padding: 40px 100px;
+  }
+
+  .container-photo img {
+    width: 200px;
+  }
+
+  .social img {
+    width: 30px;
+    border-radius: 10px;
+  }
+
+  .profile .table-biodata {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .project .content {
+    width: 33%;
+    padding: 20px;
+  }
+}
